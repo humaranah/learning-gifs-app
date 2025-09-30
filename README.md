@@ -37,7 +37,24 @@ This is a web application developed with **React** and **TypeScript** for educat
    npm install
    ```
 
-3. **Run the project in development mode:**
+3. **Configure environment variables:**
+
+   Copy the environment template file and add your Giphy API key:
+
+   ```bash
+   cp -template.env .env
+   ```
+
+   Then edit the `.env` file and add your Giphy API key:
+
+   ```env
+   # https://developers.giphy.com/dashboard/
+   VITE_GIPHY_API_KEY=your_api_key_here
+   ```
+
+   > 💡 **Note:** Get your free API key from the [Giphy Developers Dashboard](https://developers.giphy.com/dashboard/)
+
+4. **Run the project in development mode:**
 
    ```bash
    npm run dev
