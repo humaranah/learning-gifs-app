@@ -1,2 +1,2 @@
-# learning-gifs-app
+# Gifs App
 Just another Gifs App
