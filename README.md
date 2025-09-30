@@ -27,8 +27,8 @@ This is a web application developed with **React** and **TypeScript** for educat
 1. **Clone the repository:**
 
    ```bash
-   git clone <repository-url>
-   cd 03-gifs-app
+   git clone <repository-url> <directory_name>
+   cd <directory_name>
    ```
 
 2. **Install dependencies:**
