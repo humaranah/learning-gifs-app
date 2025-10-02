@@ -12,12 +12,15 @@ This is a web application developed with **React** and **TypeScript** for educat
 - 📋 Previous searches history
 - ⚡ Vite optimization
 - 🎨 Reusable components
+- 🧪 Comprehensive unit testing with Vitest
 
 ## 🛠️ Technologies Used
 
 - **React 19** - User interface library
 - **TypeScript** - Typed superset of JavaScript
 - **Vite** - Development and build tool
+- **Vitest** - Unit testing framework
+- **Testing Library** - Testing utilities for React components
 - **Axios** - HTTP client for API consumption
 - **ESLint** - Linter to maintain code quality
 - **Giphy API** - Service to fetch GIFs
@@ -60,6 +63,29 @@ This is a web application developed with **React** and **TypeScript** for educat
    npm run dev
    ```
 
+## 📁 Project Structure
+
+```text
+src/
+├── counter/         # Counter module (educational example)
+│   ├── components/  # Counter components with tests
+│   └── hooks/       # Custom counter hooks with tests
+├── gifs/            # Main GIFs module
+│   ├── actions/     # Actions for API consumption with tests
+│   ├── api/         # API configuration with tests
+│   ├── components/  # GIF-specific components
+│   ├── hooks/       # Custom hooks with tests
+│   └── interfaces/  # TypeScript interfaces
+├── mocks-data/      # Test data
+└── shared/          # Shared module
+    └── components/  # Reusable components with tests
+
+tests/
+└── mocks/           # Mock data for testing
+    ├── gifs.data.ts
+    └── giphy.response.data.ts
+```
+
 ## 📋 Available Scripts
 
 In the project directory, you can run the following commands:
@@ -73,6 +99,7 @@ Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
 
 Builds the application for production in the `dist` folder.\
 Includes TypeScript compilation and Vite optimization.
+Also runs tests before building to ensure code quality.
 
 ### `npm run lint`
 
@@ -84,20 +111,29 @@ Helps maintain clean and consistent code.
 Serves the built application locally for preview.\
 Useful for testing the production version before deployment.
 
-## 📁 Project Structure
+## 🧪 Testing
 
-```text
-src/
-├── counter/         # Counter module (educational example)
-├── gifs/            # Main GIFs module
-│   ├── actions/     # Actions for API consumption
-│   ├── api/         # API configuration
-│   ├── components/  # GIF-specific components
-│   ├── hooks/       # Custom hooks
-│   └── interfaces/  # TypeScript interfaces
-├── mocks-data/      # Test data
-└── shared/          # Shared module
-    └── components/  # Reusable components
+This project includes comprehensive unit tests covering:
+
+- ⚛️ **React Components**: Testing component rendering, user interactions, and state changes
+- 🎣 **Custom Hooks**: Testing hook logic, state management, and side effects
+- 🌐 **API Services**: Testing API configuration and data transformation
+- 🔧 **Actions**: Testing business logic and data processing functions
+
+### Running Tests
+
+```bash
+# Run tests in watch mode (default)
+npm run test
+
+# Run tests once without watch mode
+npm run test:only
+
+# Run tests with coverage
+npm run coverage
+
+# Run tests with UI
+npm run test:ui
 ```
 
 ## 🎯 Educational Purpose
@@ -109,7 +145,11 @@ This project was originally developed as part of a React course, with the goal o
 - 🌐 REST API consumption
 - 📝 TypeScript development
 - 🏗️ Modular component architecture
-- 🧪 Development best practices
+- 🧪 Unit testing with Vitest and Testing Library
+- 🔍 Test-driven development practices
+- 📊 Code coverage analysis
+- 🎭 Mocking and test data management
+- 🔧 Development best practices
 
 ## 🤝 Contributions
 
