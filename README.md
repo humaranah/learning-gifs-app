@@ -88,21 +88,21 @@ Useful for testing the production version before deployment.
 
 ```text
 src/
-├── counter/          # Counter module (educational example)
+├── counter/         # Counter module (educational example)
 ├── gifs/            # Main GIFs module
 │   ├── actions/     # Actions for API consumption
 │   ├── api/         # API configuration
 │   ├── components/  # GIF-specific components
 │   ├── hooks/       # Custom hooks
-│   └── interfaces/  # TypeScript types and interfaces
+│   └── interfaces/  # TypeScript interfaces
 ├── mocks-data/      # Test data
-└── shared/          # Shared components
+└── shared/          # Shared module
     └── components/  # Reusable components
 ```
 
 ## 🎯 Educational Purpose
 
-This project was developed as part of a React course, with the goal of learning and practicing:
+This project was originally developed as part of a React course, with the goal of learning and practicing:
 
 - ⚛️ Fundamental React concepts
 - 🎣 Creating and using custom hooks

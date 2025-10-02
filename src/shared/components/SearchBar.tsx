@@ -1,11 +1,11 @@
 import { useEffect, useState, type KeyboardEvent } from "react";
 
 interface Props {
-    placeHolder?: string;
+    placeholder?: string;
     onQuery: (term: string) => void;
 }
 
-export const SearchBar = ({ placeHolder = 'Buscar', onQuery }: Props) => {
+export const SearchBar = ({ placeholder: placeHolder = 'Buscar', onQuery }: Props) => {
 
     const [query, setQuery] = useState('');
 

@@ -17,7 +17,7 @@ export const GifsApp = () => {
             />
 
             <SearchBar
-                placeHolder="Busca lo que quieras"
+                placeholder="Busca lo que quieras"
                 onQuery={handleSearch}
             />
 
